@@ -1,10 +1,10 @@
-export {ADD_PRODUCT,UPDATE_PRODUCT,DELETE_PRODUCT} from './actions';
+import {ADD_PRODUCT} from './actions';
 
 
-const productReducer = (state,action) => {
+const productReducer = (state=[],action) => {
     let newProduct;
     switch (action.type) {
-        case  ADD_PRODUCT:
+        case ADD_PRODUCT:
             newProduct = [...state];
             newProduct.push(action.payload);
             return newProduct;

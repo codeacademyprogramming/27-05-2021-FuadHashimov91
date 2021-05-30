@@ -8,13 +8,13 @@ export const addProduct = (product) => {
         payload: product
     }
 }
-export const deleteProduct = (id) => {
+const deleteProduct = (id) => {
     return {
         type: DELETE_PRODUCT,
         payload: id
     }
 }
-export const deleteProduct = (product) => {
+const updateProduct = (product) => {
     return {
         type: UPDATE_PRODUCT,
         payload: product

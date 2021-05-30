@@ -1,13 +1,11 @@
 import './App.css';
-import Products from './components/product/Products';
-import User from './components/user/User';
+import Products from './components/product';
 
 function App() {
   return (
     <div className="App container">
       <div className='row'>
         <Products/>
-        <User />
       </div>
     </div>
   );
